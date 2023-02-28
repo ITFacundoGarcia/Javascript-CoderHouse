@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" type="text/css" href="./CSS/styles.css">
+  <title>inVERSION-One - ¡Tus inversiones!</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Changa:wght@300&display=swap" rel="stylesheet">
+  <script src="https://code.jquery.com/jquery-3.6.0.js" integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=" crossorigin="anonymous"></script>
+</head>
+<body>
+  <header>
+    <div id="centrar">
+      <ul>
+        <li><a href="./index.html">Home</a></li>
+        <li><a href="./simulador.html">Simulador cuotas/efectivo</a></li>
+        <li class="dropdown">
+          <a href="./linksUtiles.html" class="dropbtn">Links utiles </a>
+          <div class="dropdown-content">
+            <a href="http://www.bcra.gov.ar" target="_blank">Banco Central Rep. Argentina.</a>
+            <a href="https://www.ambito.com" target="_blank">Ambito Financiero</a>
+            <a href="https://www.dolarhoy.com/" target="_blank">Dolar Hoy</a>
+            <a href="https://www.bullmarketbrokers.com/" target="_blank">Bull Market Brokers</a>
+          </div>
+        </li>
+        <li><a href="./aboutUs.html">Nosotros</a></li>
+      </ul>
+      </div>
+</header>
+<div id="subBar">
+  <label class="espacioDolar" id="dolOficial">Dolar Oficial - $</label>
+  <label class="espacioDolar" id="dolSolidario">Dolar Solidario - $</label>
+  <label class="espacioDolar" id="dolMEP">Dolar Bolsa - $</label>
+  <label class="espacioDolar" id="dolCCL">Dolar Liquidacion - $</label>
+  <label class="espacioDolar" id="dolBlue">Dolar Blue - $</label>
+</div>
+  </header>
+  <div class="recuadroSite">
+    <div id='pantallaPrincipal'>
+    <div id="cuadroSimul">
+    <form name="simulacion" id="simulacion">
+        <p>Introduzca su nombre</p>
+        <input title="¡Recuerda ingresar tu nombre!" class="textoNegro" type="text" placeholder="¿Su nombre?" id="name" required><br>
+        <p>¿Cual es el costo de su producto pagando en efectivo?</p>
+        <input title="¡Recuerda que si hay un descuento en efectivo &#10;deberias ingresar el precio con descuento para&#10;saber que opción es mas conveniente!" type="number" placeholder="¿Costo en efectivo?" id="valorEft" required><br>
+        <p>¿Cual es el valor mensual que debe abonar de cuota?</p>
+        <input title="¡Aquí deberas ingresar el valor que abonarás cada mes!" type="number" placeholder="¿Valor cuota?" id="valorCuota" required><br>
+        <p>¿Cuantas cuotas deberá pagar?</p>
+        <input title="¡Aquí deberas ingresar la cantidad de cuotas a abonar!" type="number" placeholder="¿Cuantas cuotas?" id="cantCuotas" required><br>
+        <p>¿Cual es la inflacion mensual estimada de su pais?</p>
+        <p class="cuadroInf1">La ultima medición del BCRA fue:</p>
+        <p class="cuadroInf2" id="ultInflacion"></p>
+        <input title="¡Aquí deberas ingresar el valor de la inflación mensual que tenga tu pais!&#10;(Para Argentina recomendamos el valor del ultimo mes otorgado por el BCRA)" type="number" placeholder="¿Inflacion mensual?" id="inflacionMensual" required><br>
+    </form>
+    </div>
+    <div id="habilitarBoton">
+    <input type="button" value="Calcular" id="bttnCalcular" disabled>
+  </div>
+  </div>
+    <div id="pantallaSecundaria" hidden>
+    <div id=result></div>
+    <input type="button" value="Mostrar cuotas" id="bttnMostrarCuotas">
+    <div id="payList" hidden></div><br>
+    <input type="button" value="Volver al simulador" id="bttnVolver">
+    </div>
+    </div>
+    <footer id="footer"><p class="recuadroFooter">Developed by Facundo García - 2021</p></footer>
+    <script src="js/API/APIBancoCentralRepArg.js"></script>
+    <script src="js/API/APIcotizacionesDolar.js"></script>
+    <script type="module" src="./js/main.js"></script>
+</body>
+</html>

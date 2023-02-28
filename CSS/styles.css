@@ -1,0 +1,314 @@
+body {
+    background-image: url("../images/fondo.jpg");
+    text-align: center;
+    background-color: grey;
+    color: white;
+    margin: 0;
+    padding: 0;
+    font-family: 'Changa', sans-serif;
+    min-height: 100vh;
+    background-position: center; 
+    background-size: cover;
+    
+}
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #222222;
+    /* box-shadow: 0px 7px rgba(100, 100, 100, 0.5); */
+    opacity: 0.9;
+    font-size: 15px;
+  }
+  
+  li {
+    display: inline-block;
+  }
+  
+  li a, .dropbtn {
+    display: inline-block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+  }
+  
+  li a:hover, .dropdown:hover .dropbtn {
+    background-color: rgba(100, 100, 100, 0.5);
+    border-radius: 5em;
+  }
+  
+  li.dropdown {
+    display: inline-block;
+    
+  }
+  
+  .dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #222222;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+  }
+  
+  .dropdown-content a {
+    color: white;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    text-align: center;
+  }
+  
+  .dropdown-content a:hover {background-color: rgba(100, 100, 100, 0.5);}
+  
+  .dropdown:hover .dropdown-content {
+    display: block;
+  }
+
+#subBar {
+    background-color: #222222;
+    font-size: 12px;
+    margin: 0 15% 0 15%;
+    padding: 0%;
+    border-bottom-left-radius: 3em;
+    border-bottom-right-radius: 3em;
+    box-shadow: 0px 7px rgba(80, 80, 80, 0.5);
+    opacity: 0.9;
+    position: relative;
+    z-index: -1;
+}
+
+.espacioDolar {
+    font-size: 15px;
+    padding: 0% 1% 0% 1%;
+    border-bottom: 1px solid white;;
+}
+
+.recuadroFooter {
+    padding: 0.5% 0% 0.5% 0%;
+    background-color: rgba(34,34,34, 0.8);
+    border-radius: 4em;
+}
+
+.recuadroSite {
+    padding: 1% 0% 2% 0%;
+    background-color: rgba(34,34,34, 0.8);
+    margin: 1% 33% 0% 33%;
+    border-radius: 4em;
+}
+
+.recuadroLinks {
+    font-size: 14px;
+    padding: 0% 0% 0% 0%;
+    background-color: rgba(34,34,34, 0.8);
+    margin: 0% 33% 10% 33%;
+    border-radius: 4em;
+}
+
+.recuadroAboutUs {
+    padding: 0% 0% 0% 0%;
+    background-color: rgba(34,34,34, 0.8);
+    margin: 0% 20% 5% 20%;
+    border-radius: 4em;
+}
+
+.recuadroHome {
+    padding: 1% 0% 1% 0%;
+    background-color: rgba(34,34,34, 0.8);
+    margin: 5% 33% 0% 33%;
+    border-radius: 4em;
+}
+
+input:focus{
+    outline:none;
+} 
+
+a:visited {
+    color: white;
+  }
+
+#simulacion {
+    font-size:10px;
+    margin: 0.5%;
+    padding: 1.5% 0% 0% 0%;
+}
+
+
+h1 {
+    padding: 2%;
+    font-family: 'Roboto Mono', monospace;
+    color: white;
+}
+
+h2 {
+    padding: 2%;
+    font-family: 'Roboto Mono', monospace;
+    color: white;
+}
+
+p {
+    color: white;
+    font-size: 14px;
+    font-weight: 500;
+}
+
+#name {
+    margin: 0.25%;
+    text-align: center;
+    color: black;
+    border-radius: 25px;
+    border: 2px;
+    padding: 15px;
+    width: 200px;
+    height: 10px;
+
+}
+
+#valorEft {
+    margin: 0.25%;
+    padding: 1%;
+    text-align: center;
+    color: black;
+    border-radius: 25px;
+    border: 2px;
+    padding: 15px;
+    width: 200px;
+    height: 10px;
+
+}
+
+#valorCuota {
+    margin: 0.25%;
+    padding: 1%;
+    text-align: center;
+    color: black;
+    border-radius: 25px;
+    border: 2px;
+    padding: 15px;
+    width: 200px;
+    height: 10px;
+}
+
+
+#cantCuotas {
+    margin: 0.25%;
+    padding: 1%;
+    text-align: center;
+    color: black;
+    border-radius: 25px;
+    border: 2px;
+    padding: 15px;
+    width: 200px;
+    height: 10px;
+}
+
+#inflacionMensual {
+    position: relative;
+    margin: 0.25%;
+    padding: 1%;
+    text-align: center;
+    color: black;
+    border-radius: 25px;
+    border: 2px;
+    padding: 15px;
+    width: 200px;
+    height: 10px;
+    top: -1.5em;
+}
+
+#bttnCalcular {
+    background-color: #5f5f5f;
+    border: none;
+    color: white;
+    padding: 16px 32px;
+    text-decoration: none;
+    margin: 4px 2px;
+    border-radius: 5%;
+    cursor: pointer;
+}
+
+#bttnMostrarCuotas {
+    background-color: #5f5f5f;
+    border: none;
+    color: white;
+    padding: 16px 32px;
+    text-decoration: none;
+    border-radius: 5%;
+    cursor: pointer;
+}
+
+#bttnVolver {
+    background-color: #5f5f5f;
+    border: none;
+    color: white;
+    padding: 16px 32px;
+    text-decoration: none;
+    margin: 4px 2px;
+    border-radius: 5%;
+    cursor: pointer;
+}
+
+
+
+#footer {
+    color: white;
+    padding: 2%;
+    text-align: left;
+    position: fixed;
+    bottom: 0;
+}
+
+#listaLinks {
+    color: white;
+}
+
+#infoAboutUs {
+    margin: 2%;
+    padding: 10%
+}
+
+#pantallaSecundaria {
+    padding: 5% 5% 5% 5%;
+}
+
+.dataAboutUs1 {
+    font-size: 22px;
+    padding: 0;
+    margin: 0;
+}
+
+.dataAboutUs2 {
+    font-size: 16px;
+    padding: 0;
+    margin: 0;
+}
+
+#nombreUsuario {
+    font-size: 60px;
+    padding: 0;
+    margin: 0;
+}
+
+.cuadroInf1 {
+    position: relative;
+    padding: 0;
+    margin: 0;
+    font-size: 11px;
+    top: -20px;
+}
+
+.cuadroInf2 {
+    position: relative;
+    padding: 0;
+    margin: 0;
+    font-size: 12px;
+    top: -15px;
+}
+
+#social {
+    position: relative;
+    top: 4em;
+}
